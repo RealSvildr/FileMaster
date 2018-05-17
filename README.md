@@ -18,7 +18,7 @@ What it does
   * Get album number from title
   * Clear Comments
 
-* Image - Change all images files in a folder
+* Image - Change all image files in a folder
   * Resize
   * Convert (Option to delete original)
 
