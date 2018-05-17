@@ -2,10 +2,10 @@
 
 What it does
 
-###### File - Change all files in a folder (Title)
-* lowercase, UPPERCASE, Propercase or Title Case
-* Remove a especific word or phrase
-* Replace a especific word of phrase
+* File - Change all files in a folder (Title)
+ * lowercase, UPPERCASE, Propercase or Title Case
+ * Remove a especific word or phrase
+ * Replace a especific word of phrase
 	
 	
 
