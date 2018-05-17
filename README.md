@@ -1,5 +1,7 @@
 # FileMaster v1.0
 
+Copiled Version: https://github.com/RealSvildr/FileMaster/blob/master/File%20Master.zip
+
 What it does
 
 * File - Change all files in a folder (Title)
