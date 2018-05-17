@@ -23,5 +23,5 @@ What it does
 
 
 TODO: 
-[] Use Multi-Thread to Process
-[] Function to remove duplicate files
+- [ ] Use Multi-Thread to Process
+- [ ] Function to remove duplicate files
