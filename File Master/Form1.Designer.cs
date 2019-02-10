@@ -25,11 +25,12 @@
         private void InitializeComponent() {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.rFileNone = new System.Windows.Forms.RadioButton();
-            this.rFileLower = new System.Windows.Forms.RadioButton();
-            this.rFileAllFirstLetter = new System.Windows.Forms.RadioButton();
-            this.rFileFirstLetter = new System.Windows.Forms.RadioButton();
-            this.rFileCapital = new System.Windows.Forms.RadioButton();
+            this.label13 = new System.Windows.Forms.Label();
+            this.tEndWith = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.tStartWith = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.cCase = new System.Windows.Forms.ComboBox();
             this.bRenamerS = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -105,11 +106,12 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.rFileNone);
-            this.tabPage1.Controls.Add(this.rFileLower);
-            this.tabPage1.Controls.Add(this.rFileAllFirstLetter);
-            this.tabPage1.Controls.Add(this.rFileFirstLetter);
-            this.tabPage1.Controls.Add(this.rFileCapital);
+            this.tabPage1.Controls.Add(this.label13);
+            this.tabPage1.Controls.Add(this.tEndWith);
+            this.tabPage1.Controls.Add(this.label12);
+            this.tabPage1.Controls.Add(this.tStartWith);
+            this.tabPage1.Controls.Add(this.label11);
+            this.tabPage1.Controls.Add(this.cCase);
             this.tabPage1.Controls.Add(this.bRenamerS);
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
@@ -124,67 +126,71 @@
             this.tabPage1.Text = "File Renamer";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // rFileNone
+            // label13
             // 
-            this.rFileNone.AutoSize = true;
-            this.rFileNone.Location = new System.Drawing.Point(30, 50);
-            this.rFileNone.Name = "rFileNone";
-            this.rFileNone.Size = new System.Drawing.Size(113, 21);
-            this.rFileNone.TabIndex = 2;
-            this.rFileNone.TabStop = true;
-            this.rFileNone.Text = "Don\'t change";
-            this.rFileNone.UseVisualStyleBackColor = true;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(10, 50);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(76, 17);
+            this.label13.TabIndex = 20;
+            this.label13.Text = "Case Type";
             // 
-            // rFileLower
+            // tEndWith
             // 
-            this.rFileLower.AutoSize = true;
-            this.rFileLower.Location = new System.Drawing.Point(149, 50);
-            this.rFileLower.Name = "rFileLower";
-            this.rFileLower.Size = new System.Drawing.Size(92, 21);
-            this.rFileLower.TabIndex = 3;
-            this.rFileLower.TabStop = true;
-            this.rFileLower.Text = "lowercase";
-            this.rFileLower.UseVisualStyleBackColor = true;
+            this.tEndWith.Location = new System.Drawing.Point(312, 70);
+            this.tEndWith.Margin = new System.Windows.Forms.Padding(2);
+            this.tEndWith.Multiline = true;
+            this.tEndWith.Name = "tEndWith";
+            this.tEndWith.Size = new System.Drawing.Size(145, 21);
+            this.tEndWith.TabIndex = 19;
             // 
-            // rFileAllFirstLetter
+            // label12
             // 
-            this.rFileAllFirstLetter.AutoSize = true;
-            this.rFileAllFirstLetter.Location = new System.Drawing.Point(149, 77);
-            this.rFileAllFirstLetter.Name = "rFileAllFirstLetter";
-            this.rFileAllFirstLetter.Size = new System.Drawing.Size(92, 21);
-            this.rFileAllFirstLetter.TabIndex = 6;
-            this.rFileAllFirstLetter.TabStop = true;
-            this.rFileAllFirstLetter.Text = "Title Case";
-            this.rFileAllFirstLetter.UseVisualStyleBackColor = true;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(309, 51);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(65, 17);
+            this.label12.TabIndex = 18;
+            this.label12.Text = "End With";
             // 
-            // rFileFirstLetter
+            // tStartWith
             // 
-            this.rFileFirstLetter.AutoSize = true;
-            this.rFileFirstLetter.Location = new System.Drawing.Point(30, 77);
-            this.rFileFirstLetter.Name = "rFileFirstLetter";
-            this.rFileFirstLetter.Size = new System.Drawing.Size(102, 21);
-            this.rFileFirstLetter.TabIndex = 5;
-            this.rFileFirstLetter.TabStop = true;
-            this.rFileFirstLetter.Text = "Propercase";
-            this.rFileFirstLetter.UseVisualStyleBackColor = true;
+            this.tStartWith.Location = new System.Drawing.Point(163, 70);
+            this.tStartWith.Margin = new System.Windows.Forms.Padding(2);
+            this.tStartWith.Multiline = true;
+            this.tStartWith.Name = "tStartWith";
+            this.tStartWith.Size = new System.Drawing.Size(145, 21);
+            this.tStartWith.TabIndex = 17;
             // 
-            // rFileCapital
+            // label11
             // 
-            this.rFileCapital.AutoSize = true;
-            this.rFileCapital.Location = new System.Drawing.Point(247, 50);
-            this.rFileCapital.Name = "rFileCapital";
-            this.rFileCapital.Size = new System.Drawing.Size(112, 21);
-            this.rFileCapital.TabIndex = 4;
-            this.rFileCapital.TabStop = true;
-            this.rFileCapital.Text = "UPPERCASE";
-            this.rFileCapital.UseVisualStyleBackColor = true;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(160, 51);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(70, 17);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "Start With";
+            // 
+            // cCase
+            // 
+            this.cCase.FormattingEnabled = true;
+            this.cCase.Items.AddRange(new object[] {
+            "Don\'t change",
+            "lowercase",
+            "UPPERCASE",
+            "Propercase",
+            "Title Case"});
+            this.cCase.Location = new System.Drawing.Point(13, 70);
+            this.cCase.Name = "cCase";
+            this.cCase.Size = new System.Drawing.Size(145, 24);
+            this.cCase.TabIndex = 15;
             // 
             // bRenamerS
             // 
             this.bRenamerS.Location = new System.Drawing.Point(387, 16);
             this.bRenamerS.Margin = new System.Windows.Forms.Padding(2);
             this.bRenamerS.Name = "bRenamerS";
-            this.bRenamerS.Size = new System.Drawing.Size(74, 24);
+            this.bRenamerS.Size = new System.Drawing.Size(74, 22);
             this.bRenamerS.TabIndex = 14;
             this.bRenamerS.Text = "Execute";
             this.bRenamerS.UseVisualStyleBackColor = true;
@@ -197,11 +203,11 @@
             this.groupBox2.Controls.Add(this.lReplace);
             this.groupBox2.Controls.Add(this.bReplace);
             this.groupBox2.Controls.Add(this.tReplace1);
-            this.groupBox2.Location = new System.Drawing.Point(242, 110);
+            this.groupBox2.Location = new System.Drawing.Point(242, 119);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(219, 188);
+            this.groupBox2.Size = new System.Drawing.Size(219, 179);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Replace from title";
@@ -209,7 +215,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(75, 24);
+            this.label1.Location = new System.Drawing.Point(79, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(20, 17);
@@ -236,10 +242,10 @@
             // 
             // bReplace
             // 
-            this.bReplace.Location = new System.Drawing.Point(159, 19);
+            this.bReplace.Location = new System.Drawing.Point(159, 21);
             this.bReplace.Margin = new System.Windows.Forms.Padding(2);
             this.bReplace.Name = "bReplace";
-            this.bReplace.Size = new System.Drawing.Size(45, 24);
+            this.bReplace.Size = new System.Drawing.Size(45, 22);
             this.bReplace.TabIndex = 12;
             this.bReplace.Text = "Add";
             this.bReplace.UseVisualStyleBackColor = true;
@@ -258,11 +264,11 @@
             this.groupBox1.Controls.Add(this.lRemove);
             this.groupBox1.Controls.Add(this.bRemove);
             this.groupBox1.Controls.Add(this.tRemove);
-            this.groupBox1.Location = new System.Drawing.Point(13, 110);
+            this.groupBox1.Location = new System.Drawing.Point(13, 119);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(219, 188);
+            this.groupBox1.Size = new System.Drawing.Size(219, 179);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Remove from title";
@@ -271,7 +277,7 @@
             // 
             this.lRemove.FormattingEnabled = true;
             this.lRemove.ItemHeight = 16;
-            this.lRemove.Location = new System.Drawing.Point(17, 45);
+            this.lRemove.Location = new System.Drawing.Point(17, 48);
             this.lRemove.Margin = new System.Windows.Forms.Padding(2);
             this.lRemove.Name = "lRemove";
             this.lRemove.Size = new System.Drawing.Size(187, 132);
@@ -279,10 +285,10 @@
             // 
             // bRemove
             // 
-            this.bRemove.Location = new System.Drawing.Point(159, 19);
+            this.bRemove.Location = new System.Drawing.Point(159, 21);
             this.bRemove.Margin = new System.Windows.Forms.Padding(2);
             this.bRemove.Name = "bRemove";
-            this.bRemove.Size = new System.Drawing.Size(45, 24);
+            this.bRemove.Size = new System.Drawing.Size(45, 22);
             this.bRemove.TabIndex = 8;
             this.bRemove.Text = "Add";
             this.bRemove.UseVisualStyleBackColor = true;
@@ -301,7 +307,7 @@
             this.bRenamer.Location = new System.Drawing.Point(270, 19);
             this.bRenamer.Margin = new System.Windows.Forms.Padding(2);
             this.bRenamer.Name = "bRenamer";
-            this.bRenamer.Size = new System.Drawing.Size(67, 24);
+            this.bRenamer.Size = new System.Drawing.Size(67, 22);
             this.bRenamer.TabIndex = 1;
             this.bRenamer.Text = "Folder";
             this.bRenamer.UseVisualStyleBackColor = true;
@@ -545,7 +551,7 @@
             this.lImageFrom.Enabled = false;
             this.lImageFrom.FormattingEnabled = true;
             this.lImageFrom.ItemHeight = 16;
-            this.lImageFrom.Location = new System.Drawing.Point(91, 140);
+            this.lImageFrom.Location = new System.Drawing.Point(80, 109);
             this.lImageFrom.Margin = new System.Windows.Forms.Padding(2);
             this.lImageFrom.Name = "lImageFrom";
             this.lImageFrom.Size = new System.Drawing.Size(124, 100);
@@ -554,7 +560,7 @@
             // bImageFrom
             // 
             this.bImageFrom.Enabled = false;
-            this.bImageFrom.Location = new System.Drawing.Point(30, 178);
+            this.bImageFrom.Location = new System.Drawing.Point(31, 186);
             this.bImageFrom.Margin = new System.Windows.Forms.Padding(2);
             this.bImageFrom.Name = "bImageFrom";
             this.bImageFrom.Size = new System.Drawing.Size(45, 24);
@@ -640,7 +646,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(5, 161);
+            this.label8.Location = new System.Drawing.Point(25, 168);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(110, 17);
             this.label8.TabIndex = 17;
@@ -649,7 +655,7 @@
             // tImageMaxHeight
             // 
             this.tImageMaxHeight.Enabled = false;
-            this.tImageMaxHeight.Location = new System.Drawing.Point(8, 181);
+            this.tImageMaxHeight.Location = new System.Drawing.Point(28, 188);
             this.tImageMaxHeight.MaxLength = 6;
             this.tImageMaxHeight.Name = "tImageMaxHeight";
             this.tImageMaxHeight.Size = new System.Drawing.Size(70, 22);
@@ -659,7 +665,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(5, 107);
+            this.label7.Location = new System.Drawing.Point(25, 114);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(105, 17);
             this.label7.TabIndex = 15;
@@ -668,7 +674,7 @@
             // tImageMaxWidth
             // 
             this.tImageMaxWidth.Enabled = false;
-            this.tImageMaxWidth.Location = new System.Drawing.Point(8, 127);
+            this.tImageMaxWidth.Location = new System.Drawing.Point(28, 134);
             this.tImageMaxWidth.MaxLength = 6;
             this.tImageMaxWidth.Name = "tImageMaxWidth";
             this.tImageMaxWidth.Size = new System.Drawing.Size(70, 22);
@@ -679,7 +685,7 @@
             // 
             this.label6.AccessibleDescription = "";
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(5, 52);
+            this.label6.Location = new System.Drawing.Point(25, 59);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(112, 17);
             this.label6.TabIndex = 14;
@@ -690,7 +696,7 @@
             this.tImageMaxResize.AccessibleDescription = "";
             this.tImageMaxResize.AccessibleName = "";
             this.tImageMaxResize.Enabled = false;
-            this.tImageMaxResize.Location = new System.Drawing.Point(8, 72);
+            this.tImageMaxResize.Location = new System.Drawing.Point(28, 79);
             this.tImageMaxResize.MaxLength = 3;
             this.tImageMaxResize.Name = "tImageMaxResize";
             this.tImageMaxResize.Size = new System.Drawing.Size(70, 22);
@@ -807,14 +813,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tMusicArtists;
         private System.Windows.Forms.CheckBox cMusicName;
-        private System.Windows.Forms.RadioButton rFileLower;
-        private System.Windows.Forms.RadioButton rFileAllFirstLetter;
-        private System.Windows.Forms.RadioButton rFileFirstLetter;
-        private System.Windows.Forms.RadioButton rFileCapital;
         private System.Windows.Forms.Button bImageE;
         private System.Windows.Forms.Button bImage;
         private System.Windows.Forms.TextBox tImage;
-        private System.Windows.Forms.RadioButton rFileNone;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox tImageMaxResize;
         private System.Windows.Forms.Label label6;
@@ -833,6 +834,12 @@
         private System.Windows.Forms.TextBox tImageFrom;
         private System.Windows.Forms.CheckBox cImageRemoveOrigin;
         private System.Windows.Forms.CheckBox cKeepAll;
+        private System.Windows.Forms.ComboBox cCase;
+        private System.Windows.Forms.TextBox tStartWith;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox tEndWith;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
     }
 }
 

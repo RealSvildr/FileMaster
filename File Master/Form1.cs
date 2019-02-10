@@ -11,6 +11,9 @@ namespace File_Master {
     //TODO: Use Multi-Thread to process
     public partial class Form1 : Form {
         public Form1() {
+            this.Font = new System.Drawing.Font(Font.Name, 8.25f * 96f / CreateGraphics().DpiX, Font.Style, Font.Unit, Font.GdiCharSet, Font.GdiVerticalFont);
+            this.AutoScaleMode = AutoScaleMode.None;
+
             InitializeComponent();
         }
 
@@ -65,14 +68,12 @@ namespace File_Master {
 
             FileTextFormat fTFormat = FileTextFormat.none;
 
-            if (rFileCapital.Checked)
-                fTFormat = FileTextFormat.capital;
-            else if (rFileLower.Checked)
-                fTFormat = FileTextFormat.lower;
-            else if (rFileFirstLetter.Checked)
-                fTFormat = FileTextFormat.firstletter;
-            else if (rFileAllFirstLetter.Checked)
-                fTFormat = FileTextFormat.allfirstletter;
+            switch ((string)cCase.SelectedItem) {
+                case "lowercase": fTFormat = FileTextFormat.lower; break;
+                case "UPPERCASE": fTFormat = FileTextFormat.capital; break;
+                case "Propercase": fTFormat = FileTextFormat.firstletter; break;
+                case "Title Case": fTFormat = FileTextFormat.allfirstletter; break;
+            }
 
             List<FileInfo> listFiles = dir.GetFiles().ToList();
             List<string> listOldName = listFiles.Select(p => p.Name.ToLower()).ToList();
@@ -106,6 +107,8 @@ namespace File_Master {
                         break;
                 }
 
+                name = tStartWith.Text + name + tEndWith.Text;
+
                 if (name.ToLower() != oldName.ToLower() && listOldName.Contains(name.ToLower() + extension)) {
                     ret += "It was not possible to change the title of '" + file.Name + "', to '" + name + "', because there is already one file with this name.\n";
                 } else if (name != oldName) {
@@ -116,6 +119,7 @@ namespace File_Master {
             if (!cKeepAll.Checked) {
                 listRemove = new List<string>();
                 listReplace = new Dictionary<string, string>();
+                tStartWith.Text = tEndWith.Text = tRemove.Text = tReplace1.Text = tReplace2.Text = "";
                 lRemove.Items.Clear();
                 lReplace.Items.Clear();
             }
