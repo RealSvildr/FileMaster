@@ -60,30 +60,49 @@
             this.bMusic = new System.Windows.Forms.Button();
             this.tMusic = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.cImageOldExtension = new System.Windows.Forms.CheckBox();
-            this.cImageRemoveOrigin = new System.Windows.Forms.CheckBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.lImageFrom = new System.Windows.Forms.ListBox();
-            this.bImageFrom = new System.Windows.Forms.Button();
-            this.tImageFrom = new System.Windows.Forms.TextBox();
-            this.cImageConvertTo = new System.Windows.Forms.ComboBox();
-            this.cImageConvert = new System.Windows.Forms.CheckBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tabImage = new System.Windows.Forms.TabControl();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.cImageSmooth = new System.Windows.Forms.CheckBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.cImageResize = new System.Windows.Forms.CheckBox();
+            this.tImageResizePercentage = new System.Windows.Forms.TextBox();
+            this.tImageMaxResize = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tImageQuality = new System.Windows.Forms.TextBox();
+            this.tImageMaxWidth = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.tImageMaxHeight = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.tImageMaxWidth = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tImageMaxResize = new System.Windows.Forms.TextBox();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.cImageOldExtension = new System.Windows.Forms.CheckBox();
+            this.cImageConvert = new System.Windows.Forms.CheckBox();
+            this.cImageRemoveOrigin = new System.Windows.Forms.CheckBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cImageConvertTo = new System.Windows.Forms.ComboBox();
+            this.lImageFrom = new System.Windows.Forms.ListBox();
+            this.tImageFrom = new System.Windows.Forms.TextBox();
+            this.bImageFrom = new System.Windows.Forms.Button();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.tImageCropEndY = new System.Windows.Forms.TextBox();
+            this.tImageCropEndX = new System.Windows.Forms.TextBox();
+            this.tImageCropStartY = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.tImageCropStartX = new System.Windows.Forms.TextBox();
+            this.cImageCrop = new System.Windows.Forms.CheckBox();
             this.bImageE = new System.Windows.Forms.Button();
             this.bImage = new System.Windows.Forms.Button();
             this.tImage = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.cFolderDuplicate = new System.Windows.Forms.CheckBox();
             this.Remove = new System.Windows.Forms.GroupBox();
+            this.cFolderFileByName = new System.Windows.Forms.CheckBox();
             this.lFolderRemove = new System.Windows.Forms.ListBox();
             this.bFolderRemove = new System.Windows.Forms.Button();
             this.tFolderRemove = new System.Windows.Forms.TextBox();
@@ -92,15 +111,17 @@
             this.tFolder = new System.Windows.Forms.TextBox();
             this.folderBrowser = new System.Windows.Forms.FolderBrowserDialog();
             this.cKeepAll = new System.Windows.Forms.CheckBox();
-            this.cFolderFileByName = new System.Windows.Forms.CheckBox();
+            this.cImageFixed = new System.Windows.Forms.CheckBox();
             this.Folder.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.tabImage.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.Remove.SuspendLayout();
             this.SuspendLayout();
@@ -509,8 +530,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.groupBox4);
-            this.tabPage2.Controls.Add(this.groupBox3);
+            this.tabPage2.Controls.Add(this.tabImage);
             this.tabPage2.Controls.Add(this.bImageE);
             this.tabPage2.Controls.Add(this.bImage);
             this.tabPage2.Controls.Add(this.tImage);
@@ -523,91 +543,255 @@
             this.tabPage2.Text = "Image Converter";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // groupBox4
+            // tabImage
             // 
-            this.groupBox4.Controls.Add(this.cImageOldExtension);
-            this.groupBox4.Controls.Add(this.cImageRemoveOrigin);
-            this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.lImageFrom);
-            this.groupBox4.Controls.Add(this.bImageFrom);
-            this.groupBox4.Controls.Add(this.tImageFrom);
-            this.groupBox4.Controls.Add(this.cImageConvertTo);
-            this.groupBox4.Controls.Add(this.cImageConvert);
-            this.groupBox4.Controls.Add(this.label9);
-            this.groupBox4.Location = new System.Drawing.Point(182, 38);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Size = new System.Drawing.Size(164, 198);
-            this.groupBox4.TabIndex = 20;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Image Converter";
+            this.tabImage.Controls.Add(this.tabPage5);
+            this.tabImage.Controls.Add(this.tabPage6);
+            this.tabImage.Controls.Add(this.tabPage7);
+            this.tabImage.Location = new System.Drawing.Point(10, 39);
+            this.tabImage.Margin = new System.Windows.Forms.Padding(2);
+            this.tabImage.Name = "tabImage";
+            this.tabImage.SelectedIndex = 0;
+            this.tabImage.Size = new System.Drawing.Size(340, 197);
+            this.tabImage.TabIndex = 22;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.cImageFixed);
+            this.tabPage5.Controls.Add(this.cImageSmooth);
+            this.tabPage5.Controls.Add(this.label15);
+            this.tabPage5.Controls.Add(this.cImageResize);
+            this.tabPage5.Controls.Add(this.tImageResizePercentage);
+            this.tabPage5.Controls.Add(this.tImageMaxResize);
+            this.tabPage5.Controls.Add(this.label14);
+            this.tabPage5.Controls.Add(this.label6);
+            this.tabPage5.Controls.Add(this.tImageQuality);
+            this.tabPage5.Controls.Add(this.tImageMaxWidth);
+            this.tabPage5.Controls.Add(this.label7);
+            this.tabPage5.Controls.Add(this.label8);
+            this.tabPage5.Controls.Add(this.tImageMaxHeight);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage5.Size = new System.Drawing.Size(332, 171);
+            this.tabPage5.TabIndex = 0;
+            this.tabPage5.Text = "Resize";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // cImageSmooth
+            // 
+            this.cImageSmooth.AutoSize = true;
+            this.cImageSmooth.Checked = true;
+            this.cImageSmooth.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cImageSmooth.Location = new System.Drawing.Point(8, 29);
+            this.cImageSmooth.Margin = new System.Windows.Forms.Padding(2);
+            this.cImageSmooth.Name = "cImageSmooth";
+            this.cImageSmooth.Size = new System.Drawing.Size(76, 17);
+            this.cImageSmooth.TabIndex = 2;
+            this.cImageSmooth.Text = "Smoothing";
+            this.cImageSmooth.UseVisualStyleBackColor = true;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(167, 73);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(56, 13);
+            this.label15.TabIndex = 22;
+            this.label15.Text = "Resize (%)";
+            // 
+            // cImageResize
+            // 
+            this.cImageResize.AutoSize = true;
+            this.cImageResize.Location = new System.Drawing.Point(8, 8);
+            this.cImageResize.Margin = new System.Windows.Forms.Padding(2);
+            this.cImageResize.Name = "cImageResize";
+            this.cImageResize.Size = new System.Drawing.Size(58, 17);
+            this.cImageResize.TabIndex = 1;
+            this.cImageResize.Text = "Resize";
+            this.cImageResize.UseVisualStyleBackColor = true;
+            this.cImageResize.CheckedChanged += new System.EventHandler(this.ImageCheckboxResize_CheckedChanged);
+            // 
+            // tImageResizePercentage
+            // 
+            this.tImageResizePercentage.Enabled = false;
+            this.tImageResizePercentage.Location = new System.Drawing.Point(170, 90);
+            this.tImageResizePercentage.Margin = new System.Windows.Forms.Padding(2);
+            this.tImageResizePercentage.MaxLength = 6;
+            this.tImageResizePercentage.Name = "tImageResizePercentage";
+            this.tImageResizePercentage.Size = new System.Drawing.Size(54, 20);
+            this.tImageResizePercentage.TabIndex = 6;
+            // 
+            // tImageMaxResize
+            // 
+            this.tImageMaxResize.AccessibleDescription = "";
+            this.tImageMaxResize.AccessibleName = "";
+            this.tImageMaxResize.Enabled = false;
+            this.tImageMaxResize.Location = new System.Drawing.Point(245, 90);
+            this.tImageMaxResize.Margin = new System.Windows.Forms.Padding(2);
+            this.tImageMaxResize.MaxLength = 3;
+            this.tImageMaxResize.Name = "tImageMaxResize";
+            this.tImageMaxResize.Size = new System.Drawing.Size(54, 20);
+            this.tImageMaxResize.TabIndex = 7;
+            this.tImageMaxResize.Tag = "";
+            this.tImageMaxResize.Text = "100";
+            this.tImageMaxResize.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ImageTextMaxResize_KeyPress);
+            // 
+            // label14
+            // 
+            this.label14.AccessibleDescription = "";
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(9, 73);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(39, 13);
+            this.label14.TabIndex = 20;
+            this.label14.Text = "Quality";
+            // 
+            // label6
+            // 
+            this.label6.AccessibleDescription = "";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(242, 73);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Max (%)";
+            // 
+            // tImageQuality
+            // 
+            this.tImageQuality.AccessibleDescription = "";
+            this.tImageQuality.AccessibleName = "";
+            this.tImageQuality.Enabled = false;
+            this.tImageQuality.Location = new System.Drawing.Point(12, 90);
+            this.tImageQuality.Margin = new System.Windows.Forms.Padding(2);
+            this.tImageQuality.MaxLength = 3;
+            this.tImageQuality.Name = "tImageQuality";
+            this.tImageQuality.Size = new System.Drawing.Size(54, 20);
+            this.tImageQuality.TabIndex = 3;
+            this.tImageQuality.Tag = "";
+            this.tImageQuality.Text = "100";
+            // 
+            // tImageMaxWidth
+            // 
+            this.tImageMaxWidth.Enabled = false;
+            this.tImageMaxWidth.Location = new System.Drawing.Point(170, 39);
+            this.tImageMaxWidth.Margin = new System.Windows.Forms.Padding(2);
+            this.tImageMaxWidth.MaxLength = 6;
+            this.tImageMaxWidth.Name = "tImageMaxWidth";
+            this.tImageMaxWidth.Size = new System.Drawing.Size(54, 20);
+            this.tImageMaxWidth.TabIndex = 4;
+            this.tImageMaxWidth.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ImageTextMaxWidth_KeyPress);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(168, 22);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(58, 13);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Max Width";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(243, 22);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(61, 13);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Max Height";
+            // 
+            // tImageMaxHeight
+            // 
+            this.tImageMaxHeight.Enabled = false;
+            this.tImageMaxHeight.Location = new System.Drawing.Point(245, 39);
+            this.tImageMaxHeight.Margin = new System.Windows.Forms.Padding(2);
+            this.tImageMaxHeight.MaxLength = 6;
+            this.tImageMaxHeight.Name = "tImageMaxHeight";
+            this.tImageMaxHeight.Size = new System.Drawing.Size(54, 20);
+            this.tImageMaxHeight.TabIndex = 5;
+            this.tImageMaxHeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ImageTextMaxHeight_KeyPress);
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.cImageOldExtension);
+            this.tabPage6.Controls.Add(this.cImageConvert);
+            this.tabPage6.Controls.Add(this.cImageRemoveOrigin);
+            this.tabPage6.Controls.Add(this.label9);
+            this.tabPage6.Controls.Add(this.label10);
+            this.tabPage6.Controls.Add(this.cImageConvertTo);
+            this.tabPage6.Controls.Add(this.lImageFrom);
+            this.tabPage6.Controls.Add(this.tImageFrom);
+            this.tabPage6.Controls.Add(this.bImageFrom);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage6.Size = new System.Drawing.Size(332, 171);
+            this.tabPage6.TabIndex = 1;
+            this.tabPage6.Text = "Converter";
+            this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // cImageOldExtension
             // 
             this.cImageOldExtension.AutoSize = true;
             this.cImageOldExtension.Enabled = false;
-            this.cImageOldExtension.Location = new System.Drawing.Point(22, 65);
+            this.cImageOldExtension.Location = new System.Drawing.Point(19, 130);
             this.cImageOldExtension.Margin = new System.Windows.Forms.Padding(2);
             this.cImageOldExtension.Name = "cImageOldExtension";
             this.cImageOldExtension.Size = new System.Drawing.Size(117, 17);
-            this.cImageOldExtension.TabIndex = 21;
+            this.cImageOldExtension.TabIndex = 3;
             this.cImageOldExtension.Text = "Keep old Extension";
             this.cImageOldExtension.UseVisualStyleBackColor = true;
+            // 
+            // cImageConvert
+            // 
+            this.cImageConvert.AutoSize = true;
+            this.cImageConvert.Location = new System.Drawing.Point(19, 4);
+            this.cImageConvert.Margin = new System.Windows.Forms.Padding(2);
+            this.cImageConvert.Name = "cImageConvert";
+            this.cImageConvert.Size = new System.Drawing.Size(63, 17);
+            this.cImageConvert.TabIndex = 1;
+            this.cImageConvert.Text = "Convert";
+            this.cImageConvert.UseVisualStyleBackColor = true;
+            this.cImageConvert.CheckedChanged += new System.EventHandler(this.ImageCheckboxConvert_CheckedChanged);
             // 
             // cImageRemoveOrigin
             // 
             this.cImageRemoveOrigin.AutoSize = true;
             this.cImageRemoveOrigin.Enabled = false;
-            this.cImageRemoveOrigin.Location = new System.Drawing.Point(22, 44);
+            this.cImageRemoveOrigin.Location = new System.Drawing.Point(19, 67);
             this.cImageRemoveOrigin.Margin = new System.Windows.Forms.Padding(2);
             this.cImageRemoveOrigin.Name = "cImageRemoveOrigin";
             this.cImageRemoveOrigin.Size = new System.Drawing.Size(123, 17);
-            this.cImageRemoveOrigin.TabIndex = 20;
+            this.cImageRemoveOrigin.TabIndex = 2;
             this.cImageRemoveOrigin.Text = "Remove Original File";
             this.cImageRemoveOrigin.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(275, 2);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(20, 13);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "To";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(4, 101);
+            this.label10.Location = new System.Drawing.Point(172, 2);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(30, 13);
             this.label10.TabIndex = 13;
             this.label10.Text = "From";
-            // 
-            // lImageFrom
-            // 
-            this.lImageFrom.Enabled = false;
-            this.lImageFrom.FormattingEnabled = true;
-            this.lImageFrom.Location = new System.Drawing.Point(60, 101);
-            this.lImageFrom.Margin = new System.Windows.Forms.Padding(2);
-            this.lImageFrom.Name = "lImageFrom";
-            this.lImageFrom.Size = new System.Drawing.Size(94, 82);
-            this.lImageFrom.TabIndex = 12;
-            // 
-            // bImageFrom
-            // 
-            this.bImageFrom.Enabled = false;
-            this.bImageFrom.Location = new System.Drawing.Point(22, 140);
-            this.bImageFrom.Margin = new System.Windows.Forms.Padding(2);
-            this.bImageFrom.Name = "bImageFrom";
-            this.bImageFrom.Size = new System.Drawing.Size(34, 20);
-            this.bImageFrom.TabIndex = 11;
-            this.bImageFrom.Text = "Add";
-            this.bImageFrom.UseVisualStyleBackColor = true;
-            this.bImageFrom.Click += new System.EventHandler(this.bImageFrom_Click);
-            // 
-            // tImageFrom
-            // 
-            this.tImageFrom.Enabled = false;
-            this.tImageFrom.Location = new System.Drawing.Point(4, 116);
-            this.tImageFrom.Margin = new System.Windows.Forms.Padding(2);
-            this.tImageFrom.MaxLength = 5;
-            this.tImageFrom.Name = "tImageFrom";
-            this.tImageFrom.Size = new System.Drawing.Size(51, 20);
-            this.tImageFrom.TabIndex = 10;
             // 
             // cImageConvertTo
             // 
@@ -620,131 +804,169 @@
             "PNG",
             "BMP",
             "WEBP"});
-            this.cImageConvertTo.Location = new System.Drawing.Point(4, 164);
+            this.cImageConvertTo.Location = new System.Drawing.Point(276, 18);
             this.cImageConvertTo.Margin = new System.Windows.Forms.Padding(2);
             this.cImageConvertTo.Name = "cImageConvertTo";
             this.cImageConvertTo.Size = new System.Drawing.Size(54, 21);
-            this.cImageConvertTo.TabIndex = 2;
+            this.cImageConvertTo.TabIndex = 6;
             // 
-            // cImageConvert
+            // lImageFrom
             // 
-            this.cImageConvert.AutoSize = true;
-            this.cImageConvert.Location = new System.Drawing.Point(22, 22);
-            this.cImageConvert.Margin = new System.Windows.Forms.Padding(2);
-            this.cImageConvert.Name = "cImageConvert";
-            this.cImageConvert.Size = new System.Drawing.Size(63, 17);
-            this.cImageConvert.TabIndex = 1;
-            this.cImageConvert.Text = "Convert";
-            this.cImageConvert.UseVisualStyleBackColor = true;
-            this.cImageConvert.CheckedChanged += new System.EventHandler(this.ImageCheckboxConvert_CheckedChanged);
+            this.lImageFrom.Enabled = false;
+            this.lImageFrom.FormattingEnabled = true;
+            this.lImageFrom.Location = new System.Drawing.Point(174, 46);
+            this.lImageFrom.Margin = new System.Windows.Forms.Padding(2);
+            this.lImageFrom.Name = "lImageFrom";
+            this.lImageFrom.Size = new System.Drawing.Size(158, 121);
+            this.lImageFrom.TabIndex = 7;
             // 
-            // label9
+            // tImageFrom
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(4, 144);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(20, 13);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "To";
+            this.tImageFrom.Enabled = false;
+            this.tImageFrom.Location = new System.Drawing.Point(174, 18);
+            this.tImageFrom.Margin = new System.Windows.Forms.Padding(2);
+            this.tImageFrom.MaxLength = 5;
+            this.tImageFrom.Name = "tImageFrom";
+            this.tImageFrom.Size = new System.Drawing.Size(51, 20);
+            this.tImageFrom.TabIndex = 4;
             // 
-            // groupBox3
+            // bImageFrom
             // 
-            this.groupBox3.Controls.Add(this.cImageResize);
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.tImageMaxHeight);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.tImageMaxWidth);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.tImageMaxResize);
-            this.groupBox3.Location = new System.Drawing.Point(10, 37);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(164, 199);
-            this.groupBox3.TabIndex = 13;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Image Resize";
+            this.bImageFrom.Enabled = false;
+            this.bImageFrom.Location = new System.Drawing.Point(229, 18);
+            this.bImageFrom.Margin = new System.Windows.Forms.Padding(2);
+            this.bImageFrom.Name = "bImageFrom";
+            this.bImageFrom.Size = new System.Drawing.Size(34, 20);
+            this.bImageFrom.TabIndex = 5;
+            this.bImageFrom.Text = "Add";
+            this.bImageFrom.UseVisualStyleBackColor = true;
+            this.bImageFrom.Click += new System.EventHandler(this.bImageFrom_Click);
             // 
-            // cImageResize
+            // tabPage7
             // 
-            this.cImageResize.AutoSize = true;
-            this.cImageResize.Location = new System.Drawing.Point(28, 20);
-            this.cImageResize.Margin = new System.Windows.Forms.Padding(2);
-            this.cImageResize.Name = "cImageResize";
-            this.cImageResize.Size = new System.Drawing.Size(58, 17);
-            this.cImageResize.TabIndex = 19;
-            this.cImageResize.Text = "Resize";
-            this.cImageResize.UseVisualStyleBackColor = true;
-            this.cImageResize.CheckedChanged += new System.EventHandler(this.ImageCheckboxResize_CheckedChanged);
+            this.tabPage7.Controls.Add(this.label21);
+            this.tabPage7.Controls.Add(this.label20);
+            this.tabPage7.Controls.Add(this.label19);
+            this.tabPage7.Controls.Add(this.label18);
+            this.tabPage7.Controls.Add(this.label17);
+            this.tabPage7.Controls.Add(this.tImageCropEndY);
+            this.tabPage7.Controls.Add(this.tImageCropEndX);
+            this.tabPage7.Controls.Add(this.tImageCropStartY);
+            this.tabPage7.Controls.Add(this.label16);
+            this.tabPage7.Controls.Add(this.tImageCropStartX);
+            this.tabPage7.Controls.Add(this.cImageCrop);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage7.Size = new System.Drawing.Size(332, 171);
+            this.tabPage7.TabIndex = 2;
+            this.tabPage7.Text = "Crop";
+            this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // label8
+            // label21
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(19, 136);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(84, 13);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Max. Height (px)";
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(153, 119);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(35, 13);
+            this.label21.TabIndex = 10;
+            this.label21.Text = "Width";
             // 
-            // tImageMaxHeight
+            // label20
             // 
-            this.tImageMaxHeight.Enabled = false;
-            this.tImageMaxHeight.Location = new System.Drawing.Point(21, 153);
-            this.tImageMaxHeight.Margin = new System.Windows.Forms.Padding(2);
-            this.tImageMaxHeight.MaxLength = 6;
-            this.tImageMaxHeight.Name = "tImageMaxHeight";
-            this.tImageMaxHeight.Size = new System.Drawing.Size(54, 20);
-            this.tImageMaxHeight.TabIndex = 18;
-            this.tImageMaxHeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ImageTextMaxHeight_KeyPress);
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(233, 119);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(38, 13);
+            this.label20.TabIndex = 9;
+            this.label20.Text = "Height";
             // 
-            // label7
+            // label19
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(19, 93);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 13);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Max. Width (px)";
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(233, 36);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(38, 13);
+            this.label19.TabIndex = 8;
+            this.label19.Text = "Height";
             // 
-            // tImageMaxWidth
+            // label18
             // 
-            this.tImageMaxWidth.Enabled = false;
-            this.tImageMaxWidth.Location = new System.Drawing.Point(21, 109);
-            this.tImageMaxWidth.Margin = new System.Windows.Forms.Padding(2);
-            this.tImageMaxWidth.MaxLength = 6;
-            this.tImageMaxWidth.Name = "tImageMaxWidth";
-            this.tImageMaxWidth.Size = new System.Drawing.Size(54, 20);
-            this.tImageMaxWidth.TabIndex = 16;
-            this.tImageMaxWidth.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ImageTextMaxWidth_KeyPress);
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(153, 36);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(35, 13);
+            this.label18.TabIndex = 7;
+            this.label18.Text = "Width";
             // 
-            // label6
+            // label17
             // 
-            this.label6.AccessibleDescription = "";
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(19, 48);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 13);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Max. ReSize (%)";
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(200, 95);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(66, 13);
+            this.label17.TabIndex = 6;
+            this.label17.Text = "End Position";
             // 
-            // tImageMaxResize
+            // tImageCropEndY
             // 
-            this.tImageMaxResize.AccessibleDescription = "";
-            this.tImageMaxResize.AccessibleName = "";
-            this.tImageMaxResize.Enabled = false;
-            this.tImageMaxResize.Location = new System.Drawing.Point(21, 64);
-            this.tImageMaxResize.Margin = new System.Windows.Forms.Padding(2);
-            this.tImageMaxResize.MaxLength = 3;
-            this.tImageMaxResize.Name = "tImageMaxResize";
-            this.tImageMaxResize.Size = new System.Drawing.Size(54, 20);
-            this.tImageMaxResize.TabIndex = 14;
-            this.tImageMaxResize.Tag = "";
-            this.tImageMaxResize.Text = "20";
-            this.tImageMaxResize.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ImageTextMaxResize_KeyPress);
+            this.tImageCropEndY.Location = new System.Drawing.Point(236, 136);
+            this.tImageCropEndY.Margin = new System.Windows.Forms.Padding(2);
+            this.tImageCropEndY.Name = "tImageCropEndY";
+            this.tImageCropEndY.Size = new System.Drawing.Size(76, 20);
+            this.tImageCropEndY.TabIndex = 5;
+            // 
+            // tImageCropEndX
+            // 
+            this.tImageCropEndX.Location = new System.Drawing.Point(156, 136);
+            this.tImageCropEndX.Margin = new System.Windows.Forms.Padding(2);
+            this.tImageCropEndX.Name = "tImageCropEndX";
+            this.tImageCropEndX.Size = new System.Drawing.Size(76, 20);
+            this.tImageCropEndX.TabIndex = 4;
+            // 
+            // tImageCropStartY
+            // 
+            this.tImageCropStartY.Location = new System.Drawing.Point(236, 53);
+            this.tImageCropStartY.Margin = new System.Windows.Forms.Padding(2);
+            this.tImageCropStartY.Name = "tImageCropStartY";
+            this.tImageCropStartY.Size = new System.Drawing.Size(76, 20);
+            this.tImageCropStartY.TabIndex = 3;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(197, 13);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(69, 13);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "Start Position";
+            // 
+            // tImageCropStartX
+            // 
+            this.tImageCropStartX.Location = new System.Drawing.Point(156, 53);
+            this.tImageCropStartX.Margin = new System.Windows.Forms.Padding(2);
+            this.tImageCropStartX.Name = "tImageCropStartX";
+            this.tImageCropStartX.Size = new System.Drawing.Size(76, 20);
+            this.tImageCropStartX.TabIndex = 2;
+            // 
+            // cImageCrop
+            // 
+            this.cImageCrop.AutoSize = true;
+            this.cImageCrop.Location = new System.Drawing.Point(20, 16);
+            this.cImageCrop.Margin = new System.Windows.Forms.Padding(2);
+            this.cImageCrop.Name = "cImageCrop";
+            this.cImageCrop.Size = new System.Drawing.Size(48, 17);
+            this.cImageCrop.TabIndex = 1;
+            this.cImageCrop.Text = "Crop";
+            this.cImageCrop.UseVisualStyleBackColor = true;
+            this.cImageCrop.CheckedChanged += new System.EventHandler(this.ImageCheckboxCrop_CheckedChanged);
             // 
             // bImageE
             // 
@@ -818,6 +1040,16 @@
             this.Remove.TabStop = false;
             this.Remove.Text = "Remove";
             // 
+            // cFolderFileByName
+            // 
+            this.cFolderFileByName.AutoSize = true;
+            this.cFolderFileByName.Location = new System.Drawing.Point(6, 18);
+            this.cFolderFileByName.Name = "cFolderFileByName";
+            this.cFolderFileByName.Size = new System.Drawing.Size(135, 17);
+            this.cFolderFileByName.TabIndex = 20;
+            this.cFolderFileByName.Text = "Remove Files by Name";
+            this.cFolderFileByName.UseVisualStyleBackColor = true;
+            // 
             // lFolderRemove
             // 
             this.lFolderRemove.FormattingEnabled = true;
@@ -885,28 +1117,29 @@
             this.cKeepAll.TabIndex = 15;
             this.cKeepAll.UseVisualStyleBackColor = true;
             // 
-            // cFolderFileByName
+            // cImageFixed
             // 
-            this.cFolderFileByName.AutoSize = true;
-            this.cFolderFileByName.Location = new System.Drawing.Point(6, 18);
-            this.cFolderFileByName.Name = "cFolderFileByName";
-            this.cFolderFileByName.Size = new System.Drawing.Size(135, 17);
-            this.cFolderFileByName.TabIndex = 20;
-            this.cFolderFileByName.Text = "Remove Files by Name";
-            this.cFolderFileByName.UseVisualStyleBackColor = true;
+            this.cImageFixed.AutoSize = true;
+            this.cImageFixed.Location = new System.Drawing.Point(8, 50);
+            this.cImageFixed.Margin = new System.Windows.Forms.Padding(2);
+            this.cImageFixed.Name = "cImageFixed";
+            this.cImageFixed.Size = new System.Drawing.Size(74, 17);
+            this.cImageFixed.TabIndex = 23;
+            this.cImageFixed.Text = "Fixed Size";
+            this.cImageFixed.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(378, 293);
+            this.ClientSize = new System.Drawing.Size(377, 292);
             this.Controls.Add(this.cKeepAll);
             this.Controls.Add(this.Folder);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(394, 332);
-            this.MinimumSize = new System.Drawing.Size(394, 332);
+            this.MaximumSize = new System.Drawing.Size(393, 331);
+            this.MinimumSize = new System.Drawing.Size(393, 331);
             this.Name = "Form1";
             this.Text = "File Master";
             this.Folder.ResumeLayout(false);
@@ -920,10 +1153,13 @@
             this.tabPage3.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.tabImage.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.Remove.ResumeLayout(false);
@@ -970,7 +1206,6 @@
         private System.Windows.Forms.Button bImageE;
         private System.Windows.Forms.Button bImage;
         private System.Windows.Forms.TextBox tImage;
-        private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox tImageMaxResize;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
@@ -978,7 +1213,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tImageMaxWidth;
         private System.Windows.Forms.CheckBox cImageResize;
-        private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.CheckBox cImageConvert;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cImageConvertTo;
@@ -1005,6 +1239,27 @@
         private System.Windows.Forms.CheckBox cImageOldExtension;
         private System.Windows.Forms.CheckBox cFolderDuplicate;
         private System.Windows.Forms.CheckBox cFolderFileByName;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox tImageQuality;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox tImageResizePercentage;
+        private System.Windows.Forms.TabControl tabImage;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.CheckBox cImageCrop;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox tImageCropStartX;
+        private System.Windows.Forms.TextBox tImageCropEndY;
+        private System.Windows.Forms.TextBox tImageCropEndX;
+        private System.Windows.Forms.TextBox tImageCropStartY;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.CheckBox cImageSmooth;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.CheckBox cImageFixed;
     }
 }
 
